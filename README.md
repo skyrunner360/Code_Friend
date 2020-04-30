@@ -4,3 +4,6 @@ This is a Software to search multiple websites at once. It is a friend of Progra
 - Youtube
 - Stack Overflow
 - Github
+
+__Prerequisites :-
+
