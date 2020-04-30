@@ -5,5 +5,5 @@ This is a Software to search multiple websites at once. It is a friend of Progra
 - Stack Overflow
 - Github
 
-__Prerequisites :-
+__Prerequisites :-__
 
