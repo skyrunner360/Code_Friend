@@ -9,7 +9,7 @@ class non_gui():
 #Backend Developers Work Here.........
     def __init__(self):
         #Open Web Browser
-        self.driver = webdriver.Firefox() #Choose the browser to run on. I chose firefox here. For it to work you need to install geckodriver from the web and add it to your environment variables path Otherwis it gives an error.
+        self.driver = webdriver.Firefox() #Choose the browser to run on. I chose firefox here, If you're using chromium based or chrome then just simply write Chrome() here and install chrome webdriver. For it to work (on windows) you need to install geckodriver from the web and add it to your environment variables path Otherwis it gives an error. On linux just 'sudo apt-get geckodriver'.
     def search_google(self,search):
         #Open Google and search for the search string
         self.driver.get(google) #open the link of google
