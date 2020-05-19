@@ -1,6 +1,7 @@
 #call created functions here
+#It Works. So do not touch this file
+#kind of a redundant file but still let's just keep it.
 #TODO Maybe Obsolute file. Complete GUI TO Delete
-# import tkinter as tk
 import tools_func
 
 class mainclass:
