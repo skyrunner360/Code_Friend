@@ -6,7 +6,7 @@ This is a Software to search multiple websites at once. It is a friend of Progra
 - Github
 
 __Prerequisites :-__
-- Python (V3.8)
+- Python (v3.8)
 - Selenium (v3.141.0)
 - Tkinter (v8.6)
 - Google Chrome Driver/ Firefox Gecko Driver (v0.26.0)
