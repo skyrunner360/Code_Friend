@@ -9,7 +9,7 @@ __Prerequisites :-__
 - Python (V3.8)
 - Selenium (v3.141.0)
 - Tkinter (v8.6)
-- Google Chrome Driver/ Firefox Gecko Driver
+- Google Chrome Driver/ Firefox Gecko Driver (v0.26.0)
 
 __Instructions:__
 - Install Python from [Here](https://www.python.org/downloads/ "Download Python")
