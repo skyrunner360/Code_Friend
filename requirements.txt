@@ -1,2 +1,3 @@
 selenium==3.141.0
 tkinter==8.6
+geckodriver==0.26.0
