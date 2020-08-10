@@ -35,4 +35,4 @@ Or
 
 If you still have and problem running it, feel free to contact me. 
 
-![Ubuntu package](https://img.shields.io/ubuntu/v/sc) ![GitHub last commit](https://img.shields.io/github/last-commit/skyrunner360/screen-rec)
+![Ubuntu package](https://img.shields.io/ubuntu/v/sc) ![GitHub last commit](https://img.shields.io/github/last-commit/skyrunner360/Code_Friend)
