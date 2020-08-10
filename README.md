@@ -4,7 +4,8 @@ This is a Software to search multiple websites at once. It is a friend of Progra
 - Youtube
 - Stack Overflow
 - Github
-![Ubuntu package](https://img.shields.io/ubuntu/v/sc) ![GitHub last commit](https://img.shields.io/github/last-commit/skyrunner360/screen-rec)
+
+![GitHub followers](https://img.shields.io/github/followers/skyrunner360?label=Follow&style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/skyrunner360?style=social) 
 ---
 
 ![Alt text](./sample-image-code-friend "Interface")
@@ -34,4 +35,4 @@ Or
 
 If you still have and problem running it, feel free to contact me. 
 
-![GitHub followers](https://img.shields.io/github/followers/skyrunner360?label=Follow&style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/skyrunner360?style=social) 
+![Ubuntu package](https://img.shields.io/ubuntu/v/sc) ![GitHub last commit](https://img.shields.io/github/last-commit/skyrunner360/screen-rec)
