@@ -40,7 +40,7 @@ Flask==1.1.2
 gpg===1.13.1-unknown
 hidpidaemon==18.4.6
 html5lib==1.0.1
-httplib2==0.14.0
+httplib2==0.18.0
 hyperlink==19.0.0
 idna==2.8
 incremental==16.10.1
