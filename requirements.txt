@@ -29,7 +29,7 @@ Deprecated==1.2.7
 distlib==0.3.0
 distro==1.4.0
 distro-info===0.23ubuntu1
-Django==3.0.6
+Django==3.0.7
 dulwich==0.19.15
 EasyProcess==0.3
 entrypoint2==0.2.1
