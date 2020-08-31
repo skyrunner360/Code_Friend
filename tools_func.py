@@ -32,22 +32,18 @@ class Browser():
         """Goes to Google results page"""
         url = GOOGLE_URL + self.get_search_query(search)
         self.open_page(url)
-        # self.driver.get(url)
 
     def search_youtube(self, search):
         """Goes to YouTube results page"""
         url = YOUTUBE_URL + self.get_search_query(search)
         self.open_page(url)
-        # self.driver.execute_script(f'window.open("{url}", "_blank")')
 
     def search_stackoverflow(self, search):
         """Goes to StackOverflow results page"""
         url = STACKOVERFLOW_URL + self.get_search_query(search)
         self.open_page(url)
-        # self.driver.execute_script(f'window.open("{url}", "_blank")')
 
     def search_github(self, search):
         """Goes to GitHub results page"""
         url = GITHUB_URL + self.get_search_query(search)
         self.open_page(url)
-        # self.driver.execute_script(f'window.open("{url}", "_blank")')
