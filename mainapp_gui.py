@@ -40,19 +40,19 @@ if __name__ == '__main__':
     tb = Entry(frame, textvar=search, font="lucida 15 italic")
     tb.grid(row=0, column=5)
 
-    choice = IntVar()
+    choice = BooleanVar()
     google = Checkbutton(text="Google", variable=choice)
     google.grid(row=1, column=3)
 
-    choice1 = IntVar()
+    choice1 = BooleanVar()
     yt = Checkbutton(text="Youtube", variable=choice1)
     yt.grid(row=2, column=3)
 
-    choice2 = IntVar()
+    choice2 = BooleanVar()
     stack = Checkbutton(text="Stack Overflow", variable=choice2)
     stack.grid(row=3, column=3)
 
-    choice3 = IntVar()
+    choice3 = BooleanVar()
     git = Checkbutton(text="Github", variable=choice3)
     git.grid(row=4, column=3)
 
