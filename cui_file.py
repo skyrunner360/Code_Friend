@@ -1,6 +1,5 @@
 # call created functions here
 # TODO Maybe Obsolute file. Complete GUI TO Delete
-# import tkinter as tk
 import tools_func
 
 

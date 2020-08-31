@@ -26,7 +26,6 @@ class NonGui():
             '/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[2]/ytd-searchbox/form/div/div[1]/input')
         seaarching.click()
         seaarching.send_keys(search, Keys.ENTER)
-        # self.driver.get(youtube)
         sleep(2)
 
     def search_stackoverflow(self, search):
@@ -38,7 +37,6 @@ class NonGui():
             '/html/body/header/div/form/div/input')
         searching.click()
         searching.send_keys(search, Keys.ENTER)
-        # self.driver.get(stackoverflow)
         sleep(2)
 
     def search_github(self, search):
@@ -49,5 +47,4 @@ class NonGui():
             '/html/body/div[1]/header/div/div[2]/div[2]/div/div/div/form/label/input[1]')
         searching.click()
         searching.send_keys(search, Keys.ENTER)
-        # self.driver.get(github)
         sleep(2)
