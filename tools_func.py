@@ -13,13 +13,14 @@ class NonGui():
 
     def search_google(self, search):
         # Open Google and search for the search string
-        self.driver.get(google)
+        self.driver.get(GOOGLE_URL)
         self.driver.find_element_by_xpath(
             '//*[@id="tsf"]/div[2]/div[1]/div[1]/div/div[2]/input').send_keys(search, Keys.ENTER)
         sleep(2)
 
     def search_youtube(self, search):
-        self.driver.execute_script('window.open("'+youtube+'", "new window")')
+        self.driver.execute_script(
+            'window.open("'+YOUTUBE_URL+'", "new window")')
         sleep(5)
         self.driver.switch_to.window(self.driver.window_handles[1])
         seaarching = self.driver.find_element_by_xpath(
@@ -30,7 +31,7 @@ class NonGui():
 
     def search_stackoverflow(self, search):
         self.driver.execute_script(
-            'window.open("'+stackoverflow+'", "new window2")')
+            'window.open("'+STACKOVERFLOW_URL+'", "new window2")')
         sleep(5)
         self.driver.switch_to.window(self.driver.window_handles[1])
         searching = self.driver.find_element_by_xpath(
@@ -40,7 +41,8 @@ class NonGui():
         sleep(2)
 
     def search_github(self, search):
-        self.driver.execute_script('window.open("'+github+'", "new window3")')
+        self.driver.execute_script(
+            'window.open("'+GITHUB_URL+'", "new window3")')
         sleep(5)
         self.driver.switch_to.window(self.driver.window_handles[1])
         searching = self.driver.find_element_by_xpath(
