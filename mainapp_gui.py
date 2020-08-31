@@ -1,7 +1,14 @@
 # make gui part here
-import cui_file
-from tkinter import *
+from tkinter import BooleanVar
+from tkinter import Button
+from tkinter import Checkbutton
+from tkinter import Entry
+from tkinter import Frame
+from tkinter import Label
+from tkinter import StringVar
+from tkinter import Tk
 import tkinter.messagebox as msg
+import cui_file
 
 
 # Protected variable search
