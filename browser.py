@@ -1,10 +1,8 @@
 """This module contains Browser class"""
 
-from secrets import *
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from time import sleep
+from secrets import GOOGLE_URL, YOUTUBE_URL, STACKOVERFLOW_URL, GITHUB_URL
 from urllib.parse import quote
+from selenium import webdriver
 
 
 class Browser():
