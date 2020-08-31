@@ -1,27 +1,29 @@
-#make gui part here
+# make gui part here
 import cui_file
 from tkinter import *
 import tkinter.messagebox as msg
 
 
-#Protected variable search
+# Protected variable search
 def click(event):
     # obj=cui_file.mainclass()
     # obj.gui_g(search.get())
-    if choice.get()==1:
-        obj=cui_file.mainclass()
+    if choice.get() == 1:
+        obj = cui_file.mainclass()
         obj.gui_g(search.get())
-    if choice1.get()==1:
+    if choice1.get() == 1:
         obj = cui_file.mainclass()
         obj.gui_yt(search.get())
-    if choice2.get()==1:
-        obj=cui_file.mainclass()
+    if choice2.get() == 1:
+        obj = cui_file.mainclass()
         obj.gui_stack(search.get())
-    if choice3.get()==1:
-        obj=cui_file.mainclass()
+    if choice3.get() == 1:
+        obj = cui_file.mainclass()
         obj.gui_git(search.get())
     else:
-        msg.showerror("Error","Please Select a option first!")
+        msg.showerror("Error", "Please Select a option first!")
+
+
 if __name__ == '__main__':
     root = Tk()
     root.geometry("800x150")
@@ -30,14 +32,15 @@ if __name__ == '__main__':
     search = StringVar()
     search.set("")
 
-    frame = Frame(root,borderwidth=5)
+    frame = Frame(root, borderwidth=5)
     frame.grid(row=0, column=3)
 
-    lb = Label(frame,text="Enter What you want to search",font="Helvetica 15 bold",fg="blue")
-    lb.grid(row=0,column=4)
+    lb = Label(frame, text="Enter What you want to search",
+               font="Helvetica 15 bold", fg="blue")
+    lb.grid(row=0, column=4)
 
-    tb= Entry(frame,textvar=search,font ="lucida 15 italic")
-    tb.grid(row=0,column=5)
+    tb = Entry(frame, textvar=search, font="lucida 15 italic")
+    tb.grid(row=0, column=5)
 
     choice = IntVar()
     google = Checkbutton(text="Google", variable=choice)
@@ -55,9 +58,8 @@ if __name__ == '__main__':
     git = Checkbutton(text="Github", variable=choice3)
     git.grid(row=4, column=3)
 
-    bt=Button(frame,text="Search",font="lucida 15 italic")
+    bt = Button(frame, text="Search", font="lucida 15 italic")
     bt.bind("<Button-1>", click)
-    bt.grid(row=0,column=6)
-
+    bt.grid(row=0, column=6)
 
     root.mainloop()

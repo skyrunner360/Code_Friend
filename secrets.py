@@ -1,12 +1,12 @@
-google='https://www.google.com/'
-youtube='https://www.youtube.com/'
-stackoverflow='https://stackoverflow.com/'
-github='https://github.com/'
+google = 'https://www.google.com/'
+youtube = 'https://www.youtube.com/'
+stackoverflow = 'https://stackoverflow.com/'
+github = 'https://github.com/'
 
-github_uid =''#Github User ID
-github_pass = '' #Github Password
+github_uid = ''  # Github User ID
+github_pass = ''  # Github Password
 
-#Extra and unused code
+# Extra and unused code
 
 #  def mainbot(self):
 #         self.open_google()
