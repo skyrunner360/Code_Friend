@@ -6,8 +6,7 @@ import tkinter.messagebox as msg
 
 #Protected variable search
 def click(event):
-    # obj=cui_file.mainclass()
-    # obj.gui_g(search.get())
+
     if choice.get()==1:
         obj=cui_file.mainclass()
         obj.gui_g(search.get())
