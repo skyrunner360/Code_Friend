@@ -15,6 +15,7 @@ from browser import Browser
 
 class MainWindow():
     """Main GUI window class"""
+
     def __init__(self):
         root = Tk()
         root.geometry("800x150")
@@ -26,33 +27,34 @@ class MainWindow():
         frame = Frame(root, borderwidth=5)
         frame.grid(row=0, column=3)
 
-        lb = Label(frame, text="Enter What you want to search",
-                   font="Helvetica 15 bold", fg="blue")
-        lb.grid(row=0, column=4)
+        search_label = Label(frame, text="Enter What you want to search",
+                             font="Helvetica 15 bold", fg="blue")
+        search_label.grid(row=0, column=4)
 
-        tb = Entry(frame, textvar=self.search, font="lucida 15 italic")
-        tb.grid(row=0, column=5)
+        search_textbox = Entry(frame, textvar=self.search,
+                               font="lucida 15 italic")
+        search_textbox.grid(row=0, column=5)
 
         self.use_google = BooleanVar()
         google = Checkbutton(text="Google", variable=self.use_google)
         google.grid(row=1, column=3)
 
         self.use_youtube = BooleanVar()
-        yt = Checkbutton(text="Youtube", variable=self.use_youtube)
-        yt.grid(row=2, column=3)
+        yt_checkbutton = Checkbutton(text="Youtube", variable=self.use_youtube)
+        yt_checkbutton.grid(row=2, column=3)
 
         self.use_stackoverflow = BooleanVar()
-        stack = Checkbutton(text="Stack Overflow",
-                            variable=self.use_stackoverflow)
-        stack.grid(row=3, column=3)
+        so_checkbutton = Checkbutton(text="Stack Overflow",
+                                     variable=self.use_stackoverflow)
+        so_checkbutton.grid(row=3, column=3)
 
         self.use_github = BooleanVar()
-        git = Checkbutton(text="Github", variable=self.use_github)
-        git.grid(row=4, column=3)
+        gh_checkbutton = Checkbutton(text="Github", variable=self.use_github)
+        gh_checkbutton.grid(row=4, column=3)
 
-        bt = Button(frame, text="Search", font="lucida 15 italic")
-        bt.bind("<Button-1>", self.search_button_clicked)
-        bt.grid(row=0, column=6)
+        search_button = Button(frame, text="Search", font="lucida 15 italic")
+        search_button.bind("<Button-1>", self.search_button_clicked)
+        search_button.grid(row=0, column=6)
 
         root.mainloop()
 
