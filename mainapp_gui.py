@@ -8,7 +8,7 @@ from tkinter import Label
 from tkinter import StringVar
 from tkinter import Tk
 import tkinter.messagebox as msg
-import cui_file
+from browser import Browser
 
 
 # Protected variable search
@@ -19,15 +19,17 @@ def search_button_clicked(event):
     github = use_github.get()
 
     if any([google, youtube, stackoverflow, github]):
-        obj = cui_file.MainClass()
+        browser = Browser()
+        request = search.get()
+
         if google:
-            obj.gui_g(search.get())
+            browser.search_google(request)
         if youtube:
-            obj.gui_yt(search.get())
+            browser.search_youtube(request)
         if stackoverflow:
-            obj.gui_stack(search.get())
+            browser.search_stackoverflow(request)
         if github:
-            obj.gui_git(search.get())
+            browser.search_github(request)
     else:
         msg.showerror("Error", "Please Select a option first!")
 
