@@ -1,4 +1,6 @@
-# make gui part here
+"""This module contains view and logic of main window"""
+
+
 from tkinter import BooleanVar
 from tkinter import Button
 from tkinter import Checkbutton
@@ -12,6 +14,7 @@ from browser import Browser
 
 
 class MainWindow():
+    """Main GUI window class"""
     def __init__(self):
         root = Tk()
         root.geometry("800x150")
@@ -54,6 +57,7 @@ class MainWindow():
         root.mainloop()
 
     def search_button_clicked(self, event):
+        """Handler of Search Button"""
         google = self.use_google.get()
         youtube = self.use_youtube.get()
         stackoverflow = self.use_stackoverflow.get()

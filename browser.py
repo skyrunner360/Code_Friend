@@ -1,4 +1,4 @@
-# create functions here
+"""This module contains Browser class"""
 
 from secrets import *
 from selenium import webdriver
