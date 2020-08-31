@@ -9,16 +9,16 @@ def click(event):
     # obj=cui_file.mainclass()
     # obj.gui_g(search.get())
     if choice.get() == 1:
-        obj = cui_file.mainclass()
+        obj = cui_file.MainClass()
         obj.gui_g(search.get())
     if choice1.get() == 1:
-        obj = cui_file.mainclass()
+        obj = cui_file.MainClass()
         obj.gui_yt(search.get())
     if choice2.get() == 1:
-        obj = cui_file.mainclass()
+        obj = cui_file.MainClass()
         obj.gui_stack(search.get())
     if choice3.get() == 1:
-        obj = cui_file.mainclass()
+        obj = cui_file.MainClass()
         obj.gui_git(search.get())
     else:
         msg.showerror("Error", "Please Select a option first!")

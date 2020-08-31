@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 
 
-class non_gui():
+class NonGui():
     def __init__(self):
         # Open Web Browser
         self.driver = webdriver.Firefox()
