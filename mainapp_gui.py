@@ -6,16 +6,16 @@ import tkinter.messagebox as msg
 
 # Protected variable search
 def click(event):
-    if choice.get() == 1:
+    if use_google.get() == 1:
         obj = cui_file.MainClass()
         obj.gui_g(search.get())
-    if choice1.get() == 1:
+    if use_youtube.get() == 1:
         obj = cui_file.MainClass()
         obj.gui_yt(search.get())
-    if choice2.get() == 1:
+    if use_stackoverflow.get() == 1:
         obj = cui_file.MainClass()
         obj.gui_stack(search.get())
-    if choice3.get() == 1:
+    if use_github.get() == 1:
         obj = cui_file.MainClass()
         obj.gui_git(search.get())
     else:
@@ -40,20 +40,20 @@ if __name__ == '__main__':
     tb = Entry(frame, textvar=search, font="lucida 15 italic")
     tb.grid(row=0, column=5)
 
-    choice = BooleanVar()
-    google = Checkbutton(text="Google", variable=choice)
+    use_google = BooleanVar()
+    google = Checkbutton(text="Google", variable=use_google)
     google.grid(row=1, column=3)
 
-    choice1 = BooleanVar()
-    yt = Checkbutton(text="Youtube", variable=choice1)
+    use_youtube = BooleanVar()
+    yt = Checkbutton(text="Youtube", variable=use_youtube)
     yt.grid(row=2, column=3)
 
-    choice2 = BooleanVar()
-    stack = Checkbutton(text="Stack Overflow", variable=choice2)
+    use_stackoverflow = BooleanVar()
+    stack = Checkbutton(text="Stack Overflow", variable=use_stackoverflow)
     stack.grid(row=3, column=3)
 
-    choice3 = BooleanVar()
-    git = Checkbutton(text="Github", variable=choice3)
+    use_github = BooleanVar()
+    git = Checkbutton(text="Github", variable=use_github)
     git.grid(row=4, column=3)
 
     bt = Button(frame, text="Search", font="lucida 15 italic")
