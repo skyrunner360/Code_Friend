@@ -19,17 +19,14 @@ def search_button_clicked(event):
     github = use_github.get()
 
     if any([google, youtube, stackoverflow, github]):
+        obj = cui_file.MainClass()
         if google:
-            obj = cui_file.MainClass()
             obj.gui_g(search.get())
         if youtube:
-            obj = cui_file.MainClass()
             obj.gui_yt(search.get())
         if stackoverflow:
-            obj = cui_file.MainClass()
             obj.gui_stack(search.get())
         if github:
-            obj = cui_file.MainClass()
             obj.gui_git(search.get())
     else:
         msg.showerror("Error", "Please Select a option first!")
