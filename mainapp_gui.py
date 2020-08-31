@@ -6,18 +6,24 @@ import tkinter.messagebox as msg
 
 # Protected variable search
 def search_button_clicked(event):
-    if use_google.get():
-        obj = cui_file.MainClass()
-        obj.gui_g(search.get())
-    if use_youtube.get():
-        obj = cui_file.MainClass()
-        obj.gui_yt(search.get())
-    if use_stackoverflow.get():
-        obj = cui_file.MainClass()
-        obj.gui_stack(search.get())
-    if use_github.get():
-        obj = cui_file.MainClass()
-        obj.gui_git(search.get())
+    google = use_google.get()
+    youtube = use_youtube.get()
+    stackoverflow = use_stackoverflow.get()
+    github = use_github.get()
+
+    if any([google, youtube, stackoverflow, github]):
+        if google:
+            obj = cui_file.MainClass()
+            obj.gui_g(search.get())
+        if youtube:
+            obj = cui_file.MainClass()
+            obj.gui_yt(search.get())
+        if stackoverflow:
+            obj = cui_file.MainClass()
+            obj.gui_stack(search.get())
+        if github:
+            obj = cui_file.MainClass()
+            obj.gui_git(search.get())
     else:
         msg.showerror("Error", "Please Select a option first!")
 
