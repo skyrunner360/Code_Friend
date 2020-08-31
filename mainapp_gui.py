@@ -5,7 +5,7 @@ import tkinter.messagebox as msg
 
 
 # Protected variable search
-def click(event):
+def search_button_clicked(event):
     if use_google.get() == 1:
         obj = cui_file.MainClass()
         obj.gui_g(search.get())
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     git.grid(row=4, column=3)
 
     bt = Button(frame, text="Search", font="lucida 15 italic")
-    bt.bind("<Button-1>", click)
+    bt.bind("<Button-1>", search_button_clicked)
     bt.grid(row=0, column=6)
 
     root.mainloop()
