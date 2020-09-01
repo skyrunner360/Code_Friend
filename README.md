@@ -34,7 +34,7 @@ This is a Software to search multiple websites at once. It is a friend of Progra
 
 - Now Install Selenium Package by using - `pip install selenium` command.
 
-- Now Run Mainapp_gui.py file.
+- Now Run `main.py` file.
 
 If you still have and problem running it, feel free to contact me.
 
