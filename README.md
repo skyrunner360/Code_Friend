@@ -30,7 +30,7 @@ This is a Software to search multiple websites at once. It is a friend of Progra
 - Now install Chrome Driver from [here](https://chromedriver.chromium.org/ "Download Chrome Driver")
   and add it to your path (see Documentation of chrome driver)
   Or
-- For this specific project download firefox Gecko Driver from [Here](https://github.com/mozilla/geckodriver "Download Gecko Driver")
+- For this specific project download Firefox Gecko Driver from [Here](https://github.com/mozilla/geckodriver "Download Gecko Driver")
 
 - Now Install Selenium Package by using - `pip install selenium` command.
 
