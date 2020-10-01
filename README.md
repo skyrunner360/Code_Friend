@@ -1,4 +1,4 @@
-# Code Friend
+# Code Friend- A coder's friend for multi searching.
 
 This is a Software to search multiple websites at once. It is a friend of Programmer. Just give the search String and select on which platforms you want to search from
 
